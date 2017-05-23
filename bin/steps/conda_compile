@@ -4,7 +4,7 @@ if [ ! -d /app/.heroku/miniconda ]; then
     bash Miniconda3-latest-Linux-x86_64.sh  -p /app/.heroku/miniconda/ -b | indent
     rm -fr Miniconda3-latest-Linux-x86_64.sh
 
-    conda install pip --yes | indent
+    # conda install pip --yes | indent
     
     conda config --add channels conda-forge
 fi
