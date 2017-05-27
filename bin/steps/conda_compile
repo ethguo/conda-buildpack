@@ -7,6 +7,9 @@ if [ ! -d /app/.heroku/miniconda ]; then
     # conda install pip --yes | indent
     
     conda config --add channels conda-forge
+    
+    puts-step "Conda info:"
+    conda info
 fi
 
 echo "nomkl" > $HOME/.heroku/miniconda/conda-meta/pinned
